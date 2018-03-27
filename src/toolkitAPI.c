@@ -1490,6 +1490,7 @@ int DLLEXPORT swmm_setNodeOpening(int nodeID, int idx, int oType, double A,
     int errcode;
     double u_A, u_l;
 
+    
     // Check if Open
     if(swmm_IsOpenFlag() == FALSE) return(ERR_API_INPUTNOTOPEN);
     // Check if Simulation is Running
@@ -1499,6 +1500,8 @@ int DLLEXPORT swmm_setNodeOpening(int nodeID, int idx, int oType, double A,
 
     u_A = A / ( UCF(LENGTH) * UCF(LENGTH) );
     u_l = l / UCF(LENGTH);
+
+    printf("NodeID %d\n",nodeID);    
     errcode = coupling_setOpening(nodeID, idx, oType, u_A, u_l, Co, Cfw, Csw);
     return(errcode);
 }
@@ -1768,7 +1771,7 @@ int DLLEXPORT swmm_openOpening(int nodeID, int idx)
     }
 
     // Close the opening
-    errcode = coupling_closeOpening(nodeID, idx);
+    errcode = coupling_openOpening(nodeID, idx);
     return errcode;
 }
 

@@ -269,6 +269,7 @@ int coupling_setOpening(int j, int idx, int oType, double A, double l,
         opening = opening->next;
     }
 
+
     // --- if it doesn't exist, then create it
     if ( opening == NULL )
     {
