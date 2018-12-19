@@ -429,7 +429,7 @@ struct ExtInflow
 };
 typedef struct ExtInflow TExtInflow;
 
-<<<<<<< HEAD
+
 
 //------------------------------
 // NODE COVER OPENING OBJECT
@@ -451,8 +451,6 @@ struct CoverOpening
 typedef struct CoverOpening TCoverOpening;
 
 
-=======
->>>>>>> upstream/develop
 //-------------------------------
 // DRY WEATHER FLOW INFLOW OBJECT
 //-------------------------------

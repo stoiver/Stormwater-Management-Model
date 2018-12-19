@@ -152,8 +152,8 @@ BOOST_FIXTURE_TEST_CASE(sim_started_check, FixtureBeforeStep) {
 
 
     //Node
-    error = swmm_setNodeParam(0, 0, 1);
-    BOOST_CHECK_EQUAL(error, ERR_API_SIM_NRUNNING);
+    //error = swmm_setNodeParam(0, 0, 1);
+    //BOOST_CHECK_EQUAL(error, ERR_API_SIM_NRUNNING);
 
 
     //Link
