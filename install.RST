@@ -14,6 +14,7 @@ cmake -DBUILD_TESTS=1 ..
 cmake --build .
 
 cd tests
+
 ctest
 
 
