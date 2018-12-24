@@ -3,7 +3,7 @@ INSTALLATION STEPS TO BUILD SWWM5 on Ubuntu Linux
 # Install packages
 
 sudo apt-get update
-sudo apt-get install libboost-test-dev swig
+sudo apt-get install  build_essetials libboost-test-dev swig
 
 mkdir build
 cd build
@@ -20,8 +20,8 @@ ctest
 cd ../..
 pip install --user --src build/packages -r tools/requirements.txt
 
-tools/before-test.sh nrtestsuite build/bin local
-tools/run-nrtest.sh nrtestsuite local
+tools/before-test.sh nrtestsuite build/bin 5112
+tools/run-nrtest.sh nrtestsuite 5112
 
 
 
