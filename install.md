@@ -1,6 +1,6 @@
 INSTALLATION STEPS TO BUILD SWWM5 on Ubuntu Linux
 
-# Install packages
+## Install packages
 
 sudo apt-get update
 sudo apt-get install  build_essetials libboost-test-dev swig
