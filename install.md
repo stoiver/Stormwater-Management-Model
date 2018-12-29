@@ -1,4 +1,4 @@
-INSTALLATION STEPS TO BUILD SWWM5 on Ubuntu Linux
+# INSTALLATION STEPS TO BUILD SWWM5 on Ubuntu Linux
 
 ## Install packages
 
@@ -26,7 +26,7 @@ ctest
 cd ../..
 pip install --user --src build/packages -r tools/requirements.txt
 
-tools/before-test.sh nrtestsuite `pwd`build/bin 5200
+tools/before-test.sh nrtestsuite `pwd`/build/bin 5200
 tools/run-nrtest.sh nrtestsuite 5200
 ```
 
